@@ -1,6 +1,10 @@
 $(document).ready(function() {
     $('button').click(function() {
-        $('body').addClass('night');
+        if ($('body').hasClass('night')) {
+            $('body').removeClass('night').addClass('day');
+        } else {
+            $('body').removeClass('day').addClass('night');
+        }
     });
 
 });
