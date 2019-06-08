@@ -1,9 +1,9 @@
 $(document).ready(function() {
-    $('button').click(function() {
-        if ($('body').hasClass('night')) {
-            $('body').removeClass('night').addClass('day');
+    $('#orb').click(function() {
+        if ($(this).hasClass('sun')) {
+            $(this).removeClass('sun').addClass('moon');
         } else {
-            $('body').removeClass('day').addClass('night');
+            $(this).removeClass('moon').addClass('sun');
         }
     });
 
